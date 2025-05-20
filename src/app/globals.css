@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 :root{
-/**/
-/*other default setting ...*/
-/**/
+
   --secondary-glow: conic-gradient(
     from 10deg at 50% 50%,
     #eb7494 0deg,
@@ -37,7 +35,7 @@ body::before {
   width: 50vw;
   height: 50vw;
   margin-left: -200px;
-  filter: blur(90px);
+  filter: blur(180px);
   top: calc(50vh - 25vw);
   left: 50vw;
 }
@@ -50,5 +48,9 @@ body::after {
   filter: blur(90px);
   top: calc(50vh - 350px);
   left: calc(50vw - 250px);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 

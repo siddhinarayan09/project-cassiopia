@@ -77,7 +77,7 @@ body::after {
         <p>A new way to shop with friends and family.</p></motion.h3></motion.div>
         <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo text-transparent bg-clip-text "
         style={{
-    backgroundImage: 'linear-gradient(to right, #6a11cb,rgb(34, 138, 76))',
+    backgroundImage: 'linear-gradient(to right, #6a11cb,#228a4c)',
   }}
 >
         Shop together <br/>  from anywhere.
@@ -93,9 +93,9 @@ body::after {
             transition={{duration: 0.6, delay: 0.8}}
             href='#contact'
             >
-            <GradientButton className='px-12 py-3 rounded-full 
+            <GradientButton className='px-12 py-3 rounded-full border border-black
             text-white flex items-center gap-2 cursor-pointer transition duration-300 hover:scale-105'
-            gradient="linear-gradient(90deg, #6a11cb 0%, #2575fc 40%, #2ec66b 100%)" 
+            gradient="linear-gradient(90deg,#6b11cb 0%,rgba(37, 116, 252, 0.86) 60%,rgba(31, 198, 164, 0.88) 100%)" 
             >
        Create a Room
       </GradientButton></motion.a>
@@ -106,10 +106,9 @@ body::after {
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay: 1}}
             > 
-            <GradientButton className='px-9 py-3 rounded-full 
+            <GradientButton className='px-9 py-3 rounded-full border border-black
             text-white flex items-center gap-2 cursor-pointer transition duration-300 hover:scale-105'
-            gradient="linear-gradient(90deg, #2ec66b 0%,  
-#b4b239 40%, #df8200 100%)" 
+            gradient="linear-gradient(90deg,rgba(46, 198, 107, 0.9) 0%,rgba(188, 136, 38, 0.76) 40%,rgb(207, 60, 122) 100%)" 
             >
        Join room via code
       </GradientButton>

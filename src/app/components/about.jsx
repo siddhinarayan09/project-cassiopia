@@ -5,29 +5,23 @@ import { motion } from 'motion/react'
 
 const About = () => {
   return (
-    <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20'
-    initial= {{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 1}}
+    <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20 bg-white transparent-40'
+    initial= {{opacity: 0, y: 40}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 1, ease: 'easeOut'}}
             >
-        <h4 className='text-center mb-2 text-lg font-Ovo'>
-            Introduction</h4>
-        <h2 className='text-center text-5xl font-Ovo'>
-            About me</h2>
+
+        <h1 className='text-center text-5xl font-Ovo mt-10'>
+            How coShop works</h1>
+        <h4 className='text-center mt-10 text-lg font-Ovo'>
+            Experience the joy of shopping together with friends and family, no matter where they are in the world.</h4>
 
             <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-                <div>
-                    <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
-                </div>
+                
                 <div className='flex-1'>
-                    <p className='mb-10 max-w-2xl font-Ovo'> I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout
-                        my career, I have had the priviledge of collaborating with
-                        prestigious organisations, contributing to thier success
-                        and growth.
-                    </p>
 
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6
-                    max-w-2xl'>
+                    max-w-3xl'>
                         {infoList.map(({icon, iconDark, title, description}, index)=>(
                             <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
              hover:bg-pink-50 hover:-translate-y-1 hover:shadow-[4px_4px_0_#000] duration-500 transition-transform' 
